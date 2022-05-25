@@ -1,0 +1,690 @@
+/* Padrões */
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+img{
+    width: 325px;
+    height: 300px;
+}
+
+/* Config cabeçalho*/
+
+#header {
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+#logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#menu {
+    display:flex;
+    list-style: none;
+    gap: .5rem;
+    
+}
+
+#menu li {
+    margin-left: 10px;  
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .5rem;  
+}
+
+#btn-mobile{
+    display: none;
+    color: white;
+}
+
+
+/* Config Sobre Nós */
+
+.escritorio{
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 630px;
+    padding: 50px;
+    background:
+                linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                url(./imagens/Predio2.jpg) center no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.escritorio > div {
+    flex: 1 1 400px;
+}
+
+
+.sobre-nos h2{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.sobre-nos p{
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.btn-sobre .button a{
+    text-decoration: none;
+    color: white;
+}
+
+.hr3 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, rgb(175, 175, 175), transparent);  
+  }
+
+
+/* Config Slideshow */
+
+.slideshow{
+    padding: 50px 50px;
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    background: #ccc;
+}
+
+.slideshow > div {
+    flex: 1 1 400px;
+}
+
+#slide{
+    max-width: 325px;
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.4s;
+    text-align: center;
+    justify-content: center;
+}
+
+.slides{
+    width: 1000px;
+    display: flex;
+    text-align: center;
+}
+
+.btn{
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+
+.btn:hover{
+    transform: scale(1.5);
+}
+
+#back{
+    display: none;
+    bottom: -163%;
+}
+
+#next{
+    display: none;
+    right: 56.40%;
+    top: 257%;
+}
+
+#atual{
+    transition: all 2s;
+}
+.balls {
+    transition: all 0.5s;
+    border: 2px solid #fff;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 9px;
+    cursor: pointer;
+    display: none;
+}
+
+.imgAtual{
+    transition: all 0.5s;
+    background: #fff;
+}
+
+.balls:hover{
+    background-color: white;
+}
+
+#atuacao{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 275px;  
+}
+
+.texto01{
+    padding: 50px;
+    text-align: center;
+}
+.texto01 h2{
+    font-size: 30px;
+}
+
+.btn-atuacao .button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Config ABA Escritório */
+
+.escritorio-aba {
+    padding: 10px;
+}
+
+
+
+
+/* Config ABA Atuação */
+
+.atuacao-left-aba{
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    background: #fff
+}
+
+.atuacao-left-aba div {
+    flex: 1 1 200px;
+}
+.atuacao-right-aba{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    background: #CCC
+}
+
+.atuacao-right-aba div {
+    flex: 1 1 300px;
+}
+
+/* Config Contatos */
+
+#elementor-contatos{
+    width: 100%;
+    padding: 50px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#elementor-contatos h1 {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+.contatos-drluiz {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+.contatos-drfelipe {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    
+}
+
+.elemento-wpp{
+    width: 30px;
+    height: 30px;
+    
+}
+.whatsapp-link{
+    width: 20px;
+    height: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px #888;
+}
+
+.fa-whatsapp{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* Config Mapas */
+
+.localizacao{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+
+.carapicuiba{
+    width: 50%;
+}
+
+.saopaulo{
+    width: 50%;
+}
+
+.localizacao div{
+    flex: 1 1 400px;
+}
+
+.endereco-saopaulo {
+    padding: 10px;
+    position: relative;
+    right: 15%;
+}
+
+.endereco-carapicuiba {
+    padding: 10px;
+    position: relative;
+    right: 20%;
+}
+
+
+/* Config Footer */
+
+.rodape{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(121, 120, 120);
+    text-align: center;
+    color: white;
+}
+
+.rodape div{
+    flex: 1 1 300px;
+}
+
+.item{
+    width: 100%;
+    padding: 5px;
+    height: auto;
+}
+
+.footer-contato ul li{
+    height: auto;
+    padding: 9px;
+    list-style: none;
+    
+}
+
+.itens ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Responsividades  */
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    /* Config Nav-Bar */
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;   
+        gap: .5rem; 
+    }
+    #hamburger{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+        
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 70px;
+        right: 0px;
+        text-align: center;
+        background: #1d1e20;
+        z-index: 1000;
+        transition: .3s;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #menu a {
+        color: #1d1e20;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0,0.05);
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        
+    }
+
+
+    /* Config Sobre Nós */
+    .escritorio{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    background:
+                linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                url(./imagens/predio-mobile.jpg) center no-repeat;
+    background-size: cover;
+    }
+    
+    .sobre-nos{
+        padding: 30px;
+    }
+    .sobre-nos h2{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .sobre-nos p{
+        padding: 0;
+        font-size: 14px;
+    }
+    
+    .btn-sobre{
+        text-align: center;
+    }
+    .btn-sobre .button a{
+        font-size: small;
+    }
+
+
+    /* Config Slideshow */
+
+    img{
+        width: 325px;
+        height: 400px;
+    }
+
+    .slideshow{
+        display: block;
+        height: auto;
+    }
+
+    #slide{
+        padding: 10px;
+        text-align: center;
+        width: 325px;
+        max-height: 200px;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+    .slides{
+        width: 1000px;
+        display: flex;
+    }
+
+    .balls{
+        display: none;
+    }
+
+    #atuacao{
+        /* display: flex; */
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 0;
+        width: 350px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-atuacao{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn-atuacao a{
+        font-size: small;
+        color: white;
+    }
+
+    .texto01 {
+        padding: 5px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto01 h2{
+        font-size: 20px;
+        width: auto;
+    }
+
+    /* Config Contatos */
+
+    .itens-contato{
+        font-size: 12px;
+    }
+
+    /* Config aba Contatos */
+
+    /* localização */
+
+    .endereco-saopaulo {
+        padding: 10px;
+        position: relative;
+        right: 0%;
+    }
+    
+    .endereco-carapicuiba {
+        padding: 10px;
+        position: relative;
+        right: 1%;
+    }
+
+    /* Config ABA Escritório */
+
+    .escritorio-aba {
+        text-align: center;
+    }
+
+    /* Config ABA Atuação */
+    
+    .atuacao-left-aba {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .atuacao-right-aba {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    /* Config Footer */
+
+    .rodape{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .rodape div{
+        flex: 1 1 100px;
+    }
+
+    .item{
+        min-width: 425px;
+        height: auto;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    /* Padrões */
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Config Slideshow */
+
+    #slide{
+        width: 325px;
+        height: 250px;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+    #atuacao {
+        width: 325px;
+        height: 250px;
+    }
+
+    #atuacao h1{
+        margin: 0;
+        padding: 0;
+        padding-top: 90px;
+        padding-left: 200px;
+        text-align: center;
+    }
+
+    .btn-atuacao{
+        margin: 0;
+        padding: 0;
+        top: 25px;
+        left: 290px;
+    }
+
+
+    /* Config footer */
+
+    .rodape{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .rodape div{
+        flex: 1 1 100px;
+    }
+
+    .item{
+        
+        max-width: 600px;
+        height: auto;
+        
+    }
+
+    .footer-contato{
+        height: auto;
+    }
+
+    .button{
+        position: relative;
+        top: 10px;
+        left: 45%;
+    }
+
+    .endereco-saopaulo {
+        padding: 10px;
+        position: relative;
+        right: 0%;
+    }
+
+    .endereco-saopaulo p {
+        font-size: 15px;
+    }
+    
+    .endereco-carapicuiba {
+        padding: 10px;
+        position: relative;
+        right: 0%;
+    }
+
+    .endereco-carapicuiba p {
+        font-size: 15px;
+    }
+}
