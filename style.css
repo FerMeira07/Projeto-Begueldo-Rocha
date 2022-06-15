@@ -15,7 +15,7 @@ img{
 /* Config cabeçalho*/
 
 #header {
-    background: #1d1e20;
+    background: #1B2B38;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -61,7 +61,7 @@ img{
     margin: 0 auto;
     flex-wrap: wrap;
     width: 100%;
-    height: 630px;
+    height: auto;
     padding: 50px;
     background:
                 linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
@@ -74,7 +74,6 @@ img{
 .escritorio > div {
     flex: 1 1 400px;
 }
-
 
 .sobre-nos h2{
     width: 100%;
@@ -210,37 +209,330 @@ img{
 /* Config ABA Escritório */
 
 .escritorio-aba {
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
+.escritorio-aba h1{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+
+.desc-advogados {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+.desc-advogados{
+    flex: 1 1 400px;
+}
+.desc-advogados h1{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
 
 
 
 /* Config ABA Atuação */
 
-.atuacao-left-aba{
+.trabalhista {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    color: black;
     text-align: center;
-    flex-wrap: wrap;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.trabalhista div {
+    flex: 1 1 400px;
+}
+
+.img-trabalhista{
+    width: auto;
     height: 300px;
-    background: #fff
+    padding: 35px;
+    display: flex;
+    float: left;
+    align-items: center;
+    
 }
 
-.atuacao-left-aba div {
-    flex: 1 1 200px;
+.trabalhista-descricao{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    float: right;   
+    font-family: Arial;
+    font-style: normal;
 }
-.atuacao-right-aba{
-    flex-wrap: wrap;
+
+.trabalhista-descricao h2 {
+    text-align: start;
+    font-size: 40px;
+}
+
+.trabalhista-descricao p {
+    text-align: start;
+    color: #888;
+}
+
+.familia {
     width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    float: left;
+    
+    background: #DCDCDC;
+}
+
+.familia div {
+    flex: 1 1 400px;
+}
+.img-familia {
+    width: auto;
     height: 300px;
-    background: #CCC
+    padding: 0px;
+    display: flex;
+    float: right;
+    align-items: center;
 }
 
-.atuacao-right-aba div {
-    flex: 1 1 300px;
+.familia-descricao{
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    float: left;
+    font-family: Arial;
+    font-style: normal;
+    text-align: end;
 }
 
-/* Config Contatos */
+.familia-descricao h2 {
+    text-align: start;
+    font-size: 40px;
+}
+
+.familia-descricao p {
+    color: #888;
+    text-align: start;
+}
+
+.consumidor {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.consumidor div {
+    flex: 1 1 400px;
+}
+.img-consumidor{
+    width: auto;
+    height: 300px;
+    padding: 35px;
+    display: flex;
+    float: left;
+    align-items: center;
+    
+}
+
+.consumidor-descricao{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    float: right;   
+    font-family: Arial;
+    font-style: normal;
+}
+
+.consumidor-descricao h2 {
+    text-align: start;
+    font-size: 40px;
+}
+
+.consumidor-descricao p {
+    text-align: start;
+    color: #888;
+}
+
+.criminal {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    float: left;
+    background: #DCDCDC;
+}
+
+.criminal div {
+    flex: 1 1 400px;
+}
+.img-criminal {
+    width: auto;
+    height: 300px;
+    padding: 0px;
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.criminal-descricao{
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    float: left;
+    font-family: Arial;
+    font-style: normal;
+    text-align: end;
+}
+
+.criminal-descricao h2 {
+    text-align: start;
+    font-size: 40px;
+}
+
+.criminal-descricao p {
+    color: #888;
+    text-align: start;
+}
+
+.civil {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.civil div {
+    flex: 1 1 400px;
+}
+.img-civil{
+    width: auto;
+    height: 300px;
+    padding: 35px;
+    display: flex;
+    float: left;
+    align-items: center;
+    
+}
+
+.civil-descricao{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    float: right;   
+    font-family: Arial;
+    font-style: normal;
+}
+
+.civil-descricao h2 {
+    text-align: start;
+    font-size: 40px;
+}
+
+.civil-descricao p {
+    text-align: start;
+    color: #888;
+}
+
+.inventario {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    float: left;
+    background: #DCDCDC;
+}
+
+.inventario div {
+    flex: 1 1 400px;
+}
+.img-inventario {
+    width: auto;
+    height: 300px;
+    padding: 0px;
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.inventario-descricao{
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    float: left;
+    font-family: Arial;
+    font-style: normal;
+    text-align: end;
+}
+
+.inventario-descricao h2 {
+    text-align: start;
+    font-size: 40px;
+}
+
+.inventario-descricao p {
+    color: #888;
+    text-align: start;
+}
+
+.divorcio {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.divorcio div {
+    flex: 1 1 400px;
+}
+
+.img-divorcio{
+    width: auto;
+    height: 300px;
+    padding: 35px;
+    display: flex;
+    float: left;
+    align-items: center;
+    
+}
+
+.divorcio-descricao{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    float: right;   
+    font-family: Arial;
+    font-style: normal;
+}
+
+.divorcio-descricao h2 {
+    text-align: start;
+    font-size: 40px;
+}
+
+.divorcio-descricao p {
+    text-align: start;
+    color: #888;
+}
+/* Config ABA Contatos */
 
 #elementor-contatos{
     width: 100%;
@@ -250,16 +542,19 @@ img{
     flex-wrap: wrap;
 
 }
+
 #elementor-contatos h1 {
     text-align: center;
     width: 100%;
     height: 30px;
 }
+
 .contatos-drluiz {
     width: 100%;
     height: auto;
     padding: 50px;
 }
+
 .contatos-drfelipe {
     width: 100%;
     height: auto;
@@ -272,6 +567,7 @@ img{
     height: 30px;
     
 }
+
 .whatsapp-link{
     width: 20px;
     height: 20px;
@@ -333,7 +629,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: rgb(121, 120, 120);
+    background: #1B2B38;
     text-align: center;
     color: white;
 }
@@ -368,6 +664,10 @@ img{
 
 @media (max-width: 600px) {
 
+    body{
+        margin: 0 auto;
+        padding: 0;
+    }
     /* Config Nav-Bar */
 
     #btn-mobile{
@@ -379,6 +679,7 @@ img{
         cursor: pointer;   
         gap: .5rem; 
     }
+
     #hamburger{
         display: block;
         width: 20px;
@@ -456,6 +757,7 @@ img{
     .sobre-nos{
         padding: 30px;
     }
+
     .sobre-nos h2{
         font-size: 15px;
         text-align: center;
@@ -469,6 +771,7 @@ img{
     .btn-sobre{
         text-align: center;
     }
+
     .btn-sobre .button a{
         font-size: small;
     }
@@ -568,18 +871,126 @@ img{
 
     /* Config ABA Atuação */
     
-    .atuacao-left-aba {
-        height: auto;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .atuacao-right-aba {
-        height: auto;
-        padding: 20px;
+    .trabalhista {
+        width: 100%;
         text-align: center;
     }
 
+    .trabalhista-descricao {
+        width: 100%;
+    }
+
+    .trabalhista-descricao h2 {
+        text-align: center;
+    }
+
+    .trabalhista-descricao p {
+        text-align: center;
+    }
+
+    .familia {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .familia-descricao {
+        width: 100%;
+    }
+
+    .familia-descricao h2 {
+        text-align: center;
+    }
+
+    .familia-descricao p {
+        text-align: center;
+    }
+
+    .consumidor {
+        width: 100%;
+        text-align: center;
+    }
+
+    .consumidor-descricao {
+        width: 100%;
+    }
+
+    .consumidor-descricao h2 {
+        text-align: center;
+    }
+
+    .consumidor-descricao p {
+        text-align: center;
+    }
+
+    .criminal {
+        width: 100%;
+        text-align: center;
+    }
+
+    .criminal-descricao {
+        width: 100%;
+    }
+
+    .criminal-descricao h2 {
+        text-align: center;
+    }
+
+    .criminal-descricao p {
+        text-align: center;
+    }
+
+    .civil {
+        width: 100%;
+        text-align: center;
+    }
+
+    .civil-descricao {
+        width: 100%;
+    }
+
+    .civil-descricao h2 {
+        text-align: center;
+    }
+
+    .civil-descricao p {
+        text-align: center;
+    }
+
+    .inventario {
+        width: 100%;
+        text-align: center;
+    }
+
+    .inventario-descricao {
+        width: 100%;
+    }
+
+    .inventario-descricao h2 {
+        text-align: center;
+    }
+
+    .inventario-descricao p {
+        text-align: center;
+    }
+
+    .divorcio {
+        width: 100%;
+        text-align: center;
+    }
+
+    .divorcio-descricao {
+        width: 100%;
+    }
+
+    .divorcio-descricao h2 {
+        text-align: center;
+    }
+
+    .divorcio-descricao p {
+        text-align: center;
+    }
 
     /* Config Footer */
 
@@ -590,6 +1001,7 @@ img{
         flex-wrap: wrap;
 
     }
+
     .rodape div{
         flex: 1 1 100px;
     }
@@ -603,6 +1015,7 @@ img{
 
 
 @media (min-width: 1024px) {
+
     /* Padrões */
     body{
         margin: 0;
@@ -638,6 +1051,8 @@ img{
         left: 290px;
     }
 
+    /* Config ABA Atuação */
+
 
     /* Config footer */
 
@@ -647,6 +1062,7 @@ img{
         display: flex;
         flex-wrap: wrap;
     }
+    
     .rodape div{
         flex: 1 1 100px;
     }
